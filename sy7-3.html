@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>190808208刘丹的个人网页---实验7-3</title>
+		<style type="text/css">
+			body{
+			 background:url("images/zhengfangjiaowuxit.jpg") no-repeat center;
+			 padding:45px;
+			 height:600px;
+			 background-size:100% 600px;
+			}
+			img#logo,div.picture p{
+			 display:inline-block;
+			 vertical-align:middle;
+			}
+			div.picture{
+			 width:400px;
+			 height:45px;
+			 margin-left:0px;
+			 margin-top:50px;
+			}
+			form{
+			 width:300px;
+			 height:283px;
+			 background-color:rgba(255,255,255,0.9);
+			 padding:30px 40px;
+			 border:1px solid #FFF;
+			 margin-left:850px;
+			 border-radius:4px;
+			}
+			div.mima,div.title{
+			 margin-left:700px;
+			}
+			input{
+			 border:none;
+			}
+			[type="text"],[type="password"]{
+			 display:block;
+			 width:298px;
+			 height:45px;
+			 border-bottom:1.7px dotted #D8D8D8;
+			 font-size:15px;
+			 text-indent:55px;
+			 border-radius:4px;
+			 background-color:white;
+			}
+			input#text{
+			 background:url("images/3zhaohao.jpg") no-repeat 0 0;
+			}
+			[type="password"]{
+				background:url("images/3mima.jpg") no-repeat 0 0;
+			}
+			input#verification{
+			 background:url("images/yanzhengma.jpg") no-repeat 0 0;
+			 width:203px;
+			}
+			div#yanzheng,div#verification{
+			 display:inline-block;
+			 vertical-align:middle;
+			}
+			div#yanzheng{
+			 height:45px;
+			 width:92px;
+			 padding:0px;
+			 margin:0px;
+			 border-bottom:1.5px dotted #D8D8D8;
+			}
+			div.choose{
+			 width:298px;
+			 height:45px;
+			 background-color:#FFF;
+			 border-radius:5px;
+			 font-size:17px;
+			 line-height:45px;
+			 color:#666;
+			 font-weight:bold;
+			 text-align:center;
+			}
+			[type="submit"]{
+			 background-color:#09F;
+			 width:298px;
+			 height:45px;
+			 border-radius:5px;
+			 font-size:17px;
+			 line-height:45px;
+			 text-align:center;
+			 color:white;
+			 margin-top:30px;
+			}
+			div.title p{
+			 text-align:center;
+			 width:670px;
+			 height:18px;
+			 font-size:30px;
+			 color:white;
+			 line-height:18px;
+			}
+			div.picture p{
+			 font-size:25px;
+			 color:white;
+			 font-weight:bold;
+			 margin-left:20px;
+			}
+			div.mima{
+			 width:65px;
+			 height:30px;
+			 padding-left:235px;
+			 padding-right:0;
+			 margin:5.5px;
+			 line-height:30px;
+			 background-color:rgba(255,255,255,0);
+			}
+			div.mima a{
+			 color:#666;
+			 font-size:14px;
+			 text-decoration:none;
+			}
+			div.form{
+			 background-color:#FFF;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="picture">
+			<img src="images/logo_school.png" alt="logo" id="logo"/>
+		<p>教务管理系统</p >
+		</div>
+
+		<div class="title">
+			<p>用户登录</p >
+		</div>
+
+		<form action="#" method="post" name="form">
+			<div class="form">
+				<input type="text" name="user" placeholder="用户名" id="text">
+				<input type="password" name="password" placeholder="密码">
+				<div id="verification">
+					<input type="text" name="verification" placeholder="验证码" id="verification" >
+				</div>
+				<div id="yanzheng">
+					<img id="icode" title="看不清换一张" onclick="reloadcode();" alt="看不清换一张" src="images/CheckCode.jpg" width="80" height="40" src="" style="border-width:0px;"/>
+				</div>
+				<div class="choose">
+					<input type="radio" name="identity" value="部门" id="bumen">
+					<labol for="bumen">部门</labol>
+					<input type="radio" name="identity" value="教师" id="jiaoshi">
+					<labol for="jiaoshi">教师</labol>
+					<input type="radio" name="identity" value="学生" id="xuesheng" checked="checked">
+					<labol for="xuesheng">学生</labol>
+					<input type="radio" name="identity" value="访客" id="fangke">
+					<labol for="fangke">访客</labol>
+				</div>
+			</div>
+			<input type="submit" name="submit" value="登录" id="submit">
+			<div class="mima">
+				<a href="#">忘记密码</a>
+			</div>
+		</form>
+	</body>
+</html>
